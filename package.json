@@ -25,10 +25,6 @@
     "coverageReporters": [
       "text",
       "html"
-    ],
-    "reporters": [
-      "default",
-      "jest-junit"
     ]
   },
   "jest-junit": {
