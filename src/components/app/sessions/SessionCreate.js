@@ -31,7 +31,7 @@ const SessionCreate = props => {
                 <input className="form-control" type="text" placeholder="Description..." ref={e => description =e} />
             </div>
             <div className="col-3">
-                <select class="form-control" id="exampleFormControlSelect1" ref={e => course=e}>
+                <select class="form-control" id="exampleFormControlSelect1">
                     {courses.map(course => <option key={course.id} value={course.id}>{course.name}</option>)}
                 </select>
             </div>
