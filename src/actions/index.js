@@ -15,7 +15,7 @@ export const addNewCourse = (course)=> ({
         description: course.description,
         session: '',
         trainer: '',
-        duration: parseInt(course.duration)
+        duration: parseInt(course.duration,10)
     }
 })
 
@@ -34,7 +34,7 @@ export const addNewSession = (session) => ({
     description: session.description,
     course: '',
     trainer: '',
-    duration: parseInt(session.duration)
+    duration: parseInt(session.duration,10)
   }
 })
 
