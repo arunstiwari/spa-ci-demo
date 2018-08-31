@@ -4,7 +4,6 @@ const SessionCreate = props => {
     let sessionName;
     let description;
     let duration;
-    let course;
     let courses = [{id:2000,name: 'Select Courses...'}];
     console.log(props.courses);
     // courses = courses.concat(props.courses)
@@ -13,7 +12,6 @@ const SessionCreate = props => {
         console.log(sessionName.value);
         console.log(duration.value);
         console.log(description.value);
-        console.log(course);
         const course = {
             name: sessionName.value,
             description: description.value,

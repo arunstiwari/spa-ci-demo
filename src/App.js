@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import CourseContainer from './components/app/courses/coursecontainer';
 import NavigationBar from './components/nav/NavigationBar';
 import {BrowserRouter} from 'react-router-dom';
 import AppRoutes from './routes';
