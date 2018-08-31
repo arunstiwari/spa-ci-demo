@@ -48,10 +48,10 @@ pipeline{
                 sh 'sonar-scanner   -Dsonar.projectKey=CoursesApp   -Dsonar.sources=./src   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=0e428ac27218a879e8f5d0cc7e3405f0b78b9ed5'
             }
         }
-        stage('Lint') {
-            steps{
-                sh 'yarn lint'
-            }
-        }
+        // stage('Lint') {
+        //     steps{
+        //         sh 'yarn lint'
+        //     }
+        // }
     }
 }
