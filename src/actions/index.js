@@ -3,9 +3,9 @@ import {ADD_NEW_COURSE, UPDATE_COURSE, ADD_NEW_SESSION, UPDATE_SESSION} from '..
 let id = 2;
 let sessionId =2;
 
-const getCourseId = () => ++id;
+export const getCourseId = () => ++id;
 
-const getSessionId = () => ++sessionId;
+export const getSessionId = () => ++sessionId;
 
 export const addNewCourse = (course)=> ({
     type: ADD_NEW_COURSE,

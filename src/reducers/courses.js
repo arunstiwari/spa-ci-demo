@@ -6,20 +6,18 @@ const updateCourse = (courses,payload) => {
         if(course.id === payload.id ){
             course =payload;
         }
+        return course;
     });
-
-    console.log(mod);
     return mod;
 }
 
 const courses = (state=initialState.courses, {type, payload}) => {
+    
     switch (type) {
         case ADD_NEW_COURSE:
-            console.log("Inside Add New Course: ",payload);
-            console.log("State data : ",state);
-            return [...state, payload]
+            return state===null?[payload]: [...state, payload]
         case UPDATE_COURSE: 
-            return  updateCourse(state.courses, payload)          
+            return  updateCourse(state, payload)          
         default:
             return initialState.courses;
     }
