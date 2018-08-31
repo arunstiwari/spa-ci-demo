@@ -1,0 +1,4 @@
+export const ADD_NEW_COURSE = 'ADD_NEW_COURSE';
+export const UPDATE_COURSE = 'UPDATE_COURSE';
+export const ADD_NEW_SESSION = 'ADD_NEW_SESSION';
+export const UPDATE_SESSION = 'UPDATE_SESSION';
