@@ -7,16 +7,16 @@ const NavigationBar = props => {
         <ul className="navbar-nav">
         
       <li className="nav-item">
-        <NavLink to="/"><a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a></NavLink>
+        <NavLink to="/"><a className="nav-link">Home <span className="sr-only">(current)</span></a></NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/courses"><a className="nav-link" href="#">Courses</a></NavLink>
+        <NavLink to="/courses"><a className="nav-link">Courses</a></NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/sessions"><a class="nav-link" href="#">Sessions</a></NavLink>
+        <NavLink to="/sessions"><a className="nav-link">Sessions</a></NavLink>
       </li>
       <li className="nav-item">
-        <NavLink to="/trainer"><a className="nav-link disabled" href="#">Trainer</a></NavLink>
+        <NavLink to="/trainer"><a className="nav-link disabled">Trainer</a></NavLink>
       </li>
         </ul>
     </nav>
