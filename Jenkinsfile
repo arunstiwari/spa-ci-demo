@@ -25,6 +25,18 @@ pipeline{
             steps{
                 sh 'yarn test --coverage'
             }
+            post {
+                always {
+                    publishHTML target: [
+                        allowMissing         : false,
+                        alwaysLinkToLastBuild: false,
+                        keepAll             : true,
+                        reportDir            : 'coverage',
+                        reportFiles          : 'index.html',
+                        reportName           : 'Test Report'
+                    ]
+                }
+            }
         }
         stage('Package'){
             steps{
