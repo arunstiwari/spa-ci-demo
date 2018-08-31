@@ -20,6 +20,11 @@ pipeline{
             steps{
                 sh 'yarn test'
             }
+            post {
+                always {
+                    junit 'coverage/junit/junit.xml'
+                }
+            }
         }
         stage('Coverage'){
             steps{
