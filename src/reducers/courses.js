@@ -23,4 +23,18 @@ const courses = (state=initialState.courses, {type, payload}) => {
     }
 }
 
+export const courses1 = (state = initialState.courses, {
+  type,
+  payload
+}) => {
+    switch (type) {
+        case ADD_NEW_COURSE:
+          return state ===null?[payload]: [...state, payload]
+        default:
+            return initialState.courses;
+    }
+
+  
+}
+
 export default courses;

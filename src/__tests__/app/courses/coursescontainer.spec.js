@@ -13,6 +13,7 @@ const mockStore = configureStore();
 let wrapper;
 let store;
 
+// AAA (Arrange, Act, Assert)
 describe('CourseContainer', () => {
     
     beforeEach(() => {
