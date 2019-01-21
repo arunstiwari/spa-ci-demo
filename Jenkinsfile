@@ -46,11 +46,11 @@ pipeline{
                 sh 'yarn build'
             }
         }
-        stage('SonarQube Analysis') {
-            steps{
-                sh 'sonar-scanner '
-            }
-        }
+        // stage('SonarQube Analysis') {
+        //     steps{
+        //         sh 'sonar-scanner '
+        //     }
+        // }
         // stage('Lint') {
         //     steps{
         //         sh 'yarn lint'
