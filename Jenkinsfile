@@ -6,7 +6,7 @@ pipeline{
     //     }
     // }
     agent {
-	label 'macagent'}
+	label 'macagent'
     }
     
     environment {
