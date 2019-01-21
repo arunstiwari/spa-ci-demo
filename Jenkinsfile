@@ -5,7 +5,9 @@ pipeline{
     //         args '-p 3000:3000'
     //     }
     // }
-    agent any
+    agent {
+	label 'macagent'}
+    }
     
     environment {
         CI = 'true'
